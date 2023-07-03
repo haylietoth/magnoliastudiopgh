@@ -7,7 +7,7 @@
   background-size: 90%;
   background-color: #333333;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .coming-soon {
     background-image: url(/images/preview-mobile.jpeg);
     background-repeat: no-repeat;
