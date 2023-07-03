@@ -1,4 +1,19 @@
 /* General */
+.coming-soon {
+  background-image: url(/images/preview.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 90%;
+}
+@media (max-width: 767px) {
+  .coming-soon {
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: auto;
+  }
+}
+
 .container, header, footer {
   max-width: 980px;
   margin: auto;

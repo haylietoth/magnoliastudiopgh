@@ -4,7 +4,8 @@
   "author": "Prismic",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "start:dev": "node app.js --watch"
   },
   "dependencies": {
     "@prismicio/client": "^6.4.2",
