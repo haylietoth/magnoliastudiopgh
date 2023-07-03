@@ -7,13 +7,13 @@
   background-size: 80%;
   background-color: #333333;
 }
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .coming-soon {
-    background-repeat: repeat-y;
-    background-position: center;
+    background-image: url(/images/preview-mobile.jpeg);
+    background-repeat: no-repeat;
     background-size: auto;
   }
-} */
+}
 
 .container, header, footer {
   max-width: 980px;
