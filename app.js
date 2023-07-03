@@ -17,6 +17,7 @@ route.listen(PORT, () => {
   process.stdout.write(`Point your browser to: http://localhost:${PORT}\n`);
 });
 
+// Middleware to enables Previews
 const prismicAutoPreviewsMiddleware = (req, _res, next) => {
   client.enableAutoPreviewsFromReq(req);
   next();
