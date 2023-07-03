@@ -4,7 +4,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: 90%;
+  background-size: 80%;
+  background-color: #333333;
 }
 @media (max-width: 767px) {
   .coming-soon {
