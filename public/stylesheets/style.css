@@ -11,7 +11,7 @@
   .coming-soon {
     background-image: url(/images/preview-mobile.jpeg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
   }
 }
 
