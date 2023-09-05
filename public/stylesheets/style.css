@@ -1,6 +1,7 @@
 /* General */
 .container, header, footer {
   max-width: 980px;
+  padding: 20px;
   margin: auto;
 }
 .content-section {
@@ -55,8 +56,12 @@
 
 /* Header */
 .site-header {
-  height: 30px;
+  height: 36px;
   padding: 20px 0;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 .site-header,
 .site-header a {
