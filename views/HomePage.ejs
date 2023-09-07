@@ -1,33 +1,16 @@
-<!DOCTYPE html>
 <html>
   <head>
     <%- include('./partials/head'); %>
   </head>
-  <body class="homepage">
-    <%- include('./partials/navigation'); %> 
-    <% const banner = homePageContent.data.homepage_banner[0] %>
-    <section
-      class="homepage-banner"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(<%-banner.image.url%>);"
-    >
-      <div class="banner-content">
-        <h2 class="banner-title">
-          <%- ctx.prismicH.asText(banner.title) %>
-        </h2>
-        <p class="banner-description">
-          <%- ctx.prismicH.asText(banner.tagline) %>
-        </p>
-        <a class="banner-button" 
-          href="<%- ctx.prismicH.asLink(banner.button_link); %>">
-          <%- ctx.prismicH.asText(banner.button_label); %>
-        </a>
-      </div>
-    </section>
+  <body>
+    <%- include('./partials/navigation'); %>
     <div class="container">
-      <%- include("SliceZone", {SliceZone: homePageContent.data.page_content}); %>
+      <h1 style="text-align:center;padding:20px 0;">WORK IN PROGRESS</h1>
     </div>
     <footer>
       <%- include('./partials/footer'); %>
     </footer>
   </body>
 </html>
+
+

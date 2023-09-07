@@ -57,7 +57,7 @@ route.get(
   '/',
   asyncHandler(async (req, res, next) => {
     const homePageContent = await client.getSingle('homepage');
-    res.render('Home Page', { homePageContent });
+    res.render('HomePage', { homePageContent });
   })
 );
 
@@ -65,10 +65,38 @@ route.get(
 route.get(
   '/our-team',
   asyncHandler(async (req, res, next) => {
-    const teamPageContent = await client.getSingle('our_team');
-    res.render('TeamPage', { teamPageContent });
+    const pageContent = await client.getSingle('our_team');
+    res.render('page', { pageContent });
   })
 );
+
+// Route for services page
+route.get(
+  '/services',
+  asyncHandler(async (req, res, next) => {
+    const pageContent = await client.getSingle('services');
+    res.render('Service', { pageContent });
+  })
+);
+
+// Route for contact page
+route.get(
+  '/work',
+  asyncHandler(async (req, res, next) => {
+    const pageContent = await client.getSingle('work');
+    res.render('Work', { pageContent });
+  })
+);
+
+// Route for contact page
+route.get(
+  '/contact',
+  asyncHandler(async (req, res, next) => {
+    const pageContent = await client.getSingle('contact');
+    res.render('Contact', { pageContent });
+  })
+);
+
 
 // Route for page
 route.get(

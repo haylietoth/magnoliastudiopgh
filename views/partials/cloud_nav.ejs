@@ -1,8 +1,9 @@
-<section class="site-header" id="site-header">
-    <a href="./" class="logo" id="logo">
+<section class="cloud-header" id="cloud-header">
+    <a href="./" class="logo" id="logo" style="float:left;">
       <div><span style="font-family: horizon;">Magnolia </span><span style="font-family:vultures;font-weight:100;font-size: 4rem;vertical-align: middle;">studio</span></div>
     </a>
     <div id="nav-bb">
+      <a href="./" target="_self">Home </a>
       <% if (menuContent != null) { %>
         <% menuContent.data.menu_links.map(menuLink => { %>
             <a href="<%- ctx.prismicH.asLink(menuLink.link) %>" target="<%- menuLink.target %>">
@@ -11,7 +12,7 @@
         <% }) %>
       <% } %>
     </div>
-    <a href="javascript:void(0);" class="icon">
+    <a href="javascript:void(0);" class="cloud-icon">
       <i class="fa fa-plus" aria-hidden="true"></i>
     </a>
 </section>

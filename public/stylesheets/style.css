@@ -60,6 +60,7 @@
   background-color: #E4E2DD;
   overflow: hidden;
   position: fixed;
+  z-index: 100;
   top: 0;
   width: 100%;
   max-width: 1024px;
@@ -71,6 +72,10 @@
   -webkit-transition: background-position 1s;
   -moz-transition: background-position 1s;
   transition: background-position 1s; */
+}
+
+.cloud-header {
+  background-color: none !important;
 }
 
 /* .menu-open {
@@ -90,19 +95,17 @@
 }
 
 .site-header a {
-  display: block;
+  display: inline-block;
   color: #2B2B2B;
   text-align: center;
   padding: 14px;
   text-decoration: none;
   font-size: 14px;
-  float: right;
 }
 
 a.logo {
   float: left;
-  height: 53px;
-
+  height: 80px;
 }
 
 #nav-bb {
@@ -110,6 +113,10 @@ a.logo {
   font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
+}
+
+.site-header div#nav-bb {
+  float: right;
 }
 
 .site-header .icon {
@@ -322,17 +329,21 @@ footer a {
 }
 
 /* team-container */
-.team-container {
+.team-container, .service-container {
   display: flex;
   overflow-x: hidden;
   width: 100%;
   margin: auto 0 4rem 0;
 } 
 
-.team-container:after {
+.team-container:after, .service-container:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.team-container p {
+  margin-bottom: 2rem;
 }
 
 .reverse {
@@ -363,7 +374,7 @@ footer a {
   margin-left: auto;
   margin-right: auto;
   width: 68%;
-  border: 50px solid #D3CFC5;
+  border: 25px solid #D3CFC5;
 }
 
 .team-links {
@@ -379,7 +390,143 @@ footer a {
   padding: 0 10px;
 }
 
+/* service page */
+
+.services {
+  position: relative;
+  z-index: -1;
+}
+.services:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.service {
+  padding: 1rem;
+  display: flex;
+  float: left;
+  width: 33.33%;
+}
+
+.title {
+  padding: 5px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  border-left: 0 !important;
+}
+
+.service .title h2 {
+  margin-bottom: 0;
+  color: #861010;
+}
+
+.title, .desc {
+  border: 1px solid #2B2B2B;
+}
+
+.desc {
+  position: relative;
+}
+
+.desc > p {
+  padding: 1rem;
+}
+
+.details {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #2B2B2B;
+  display: flex;
+  justify-content: center;
+}
+
+.details p {
+  padding: 1rem 2rem;
+}
+
+.details p:first-of-type {
+  border-right: 1px solid #2B2B2B;
+}
+
+
+/* about */
+.about {
+  max-width: 1024px;
+  position: fixed;
+  top: 100;
+  z-index: 99;
+}
+
+.windows {
+  display: block;
+}
+
+#cancelPolicy {
+  width: 70%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#cancelPolicy p {
+  font-size: 18px;
+  font-family: inherit !important;
+  font-weight: normal !important;
+  text-transform: none !important;
+}
+
+#hours {
+  width: 30%;
+  position: fixed;
+  left: 25%;
+  top: 40%;
+  transform: translate(-50%, 0);
+}
+
+.hour-table {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.hour-table td,
+.hour-table th {
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+}
+
+.hour-table tbody tr:hover {
+  background-color: navy;
+  color: white;
+}
+
+#contact {
+  width: 50%;
+  position: fixed;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, 0);
+}
+
+.contact-fieldset * {
+  font-size: 15px;
+}
+
+.contact-fieldset .field-row-stacked input {
+  padding-bottom: 5px;
+}
+
 /* Media Queries */
+@media (max-width: 1000px) {
+  .service {
+    width: 50%;
+  }
+}
+
 @media (max-width: 767px) {
   .container, header {
     max-width: 100%;
@@ -396,8 +543,15 @@ footer a {
     text-align: center;
   }
   
-  #nav-bb{
+  .site-header div#nav-bb {
     display: none;
+    float: none;
+  }
+
+  .site-header div#nav-bb a:hover,
+  .site-header div#nav-bb a:focus {
+    background-color: #861010;
+    color:#F6F6F4;
   }
 
   .site-header a.icon {
@@ -409,8 +563,13 @@ footer a {
   }
 
   .site-header a {
+    display: block;
     float:none;
     text-align: center;
+  }
+
+  .service {
+    width: 100%;
   }
 
   .team-container {
@@ -439,4 +598,74 @@ footer a {
     float: none;
     justify-content: space-evenly;
   }
+}
+
+@media (max-width: 600px) {
+ #cancelPolicy, #hours, #contact {
+  width: 80%;
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  margin: 1rem auto;
+ }
+}
+
+
+.cloud-header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.cloud-header a {
+  display: block;
+  color: #2B2B2B;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.cloud-header div#nav-bb a:hover {
+  background-color: navy;
+  color:#F6F6F4;
+}
+
+.cloud-header div#nav-bb {
+  position: absolute;
+  display: none;
+  width: 100%;
+  background-color: #F6F6F4;
+}
+
+.cloud-header a.cloud-icon {
+  display: block;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cloud-header .cloud-icon:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #F6F6F4;
+  clip-path: polygon(0% 0%,0% 100%,100% 0%);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+a:focus {
+  outline: none !important;
 }

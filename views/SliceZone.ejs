@@ -17,6 +17,9 @@
   else if (slice.slice_type === 'team_member') {
     return prevSlices + include('./slices/TeamMember.ejs', { slice: slice, index: index})
   }
+  else if (slice.slice_type === 'service') {
+    return prevSlices + include('./slices/service.ejs', { slice: slice, index: index})
+  }
   else {
     return '<h1>No Slices found</h1>';
   } 

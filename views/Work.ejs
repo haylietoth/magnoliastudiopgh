@@ -6,10 +6,12 @@
     <%- include('./partials/navigation'); %>
     <div class="container">
       <h1 style="text-align:center;padding:20px 0;"><%- ctx.prismicH.asText(pageContent.data.title) %></h1>
-      <%- include("SliceZone", {SliceZone: pageContent.data.page_content}); %>
+      <%- pageContent.data.image %>
     </div>
     <footer>
       <%- include('./partials/footer'); %>
     </footer>
   </body>
 </html>
+
+

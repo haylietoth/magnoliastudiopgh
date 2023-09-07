@@ -1,16 +1,22 @@
 * {
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
 }
-::selection {
-  background: #FFF7C7; /* WebKit/Blink Browsers */
+/* ::selection {
+  background: #FFF7C7; /* WebKit/Blink Browsers 
 }
 ::-moz-selection {
-  background: #FFF7C7; /* Gecko Browsers */
-}
+  background: #FFF7C7; Gecko Browsers
+}  */
 
 @font-face {
   font-family: horizon;
   src: url(../fonts/horizon.otf);
+}
+
+@font-face {
+  font-family: horizon_outlined;
+  src: url(../fonts/horizon_outlined.otf);
 }
 
 @font-face {
@@ -50,6 +56,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  color: #861010;
+  font-family: "horizon_outlined", sans-serif;
   font-size: 42px;  
 }
 h2, h2 a {
@@ -59,7 +67,7 @@ h3, h3 a {
   font-size: 20px;
 }
 p {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   font-family: "poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
