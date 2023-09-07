@@ -57,11 +57,14 @@
 
 /* Header */
 .site-header {
+  background-color: #E4E2DD;
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #E4E2DD;
+  max-width: 1024px;
+  left: 50%;
+  transform: translate(-50%, 0);
   /* background-size: 100% 200%;
   background-image: linear-gradient(to bottom, #E4E2DD 50%, #F6F6F4 50%);
   background-position: 0 0;
