@@ -1,4 +1,4 @@
-<%- SliceZone.reduce((prevSlices, slice) => {
+<%- SliceZone.reduce((prevSlices, slice, index) => {
   if (slice.slice_type === 'text_section') {
      return prevSlices + include('./slices/TextSection.ejs', { slice: slice })
    }  
@@ -13,6 +13,9 @@
   }
   else if (slice.slice_type === 'image_highlight') {
     return prevSlices + include('./slices/ImageHighlight.ejs', { slice: slice })
+  }
+  else if (slice.slice_type === 'team_member') {
+    return prevSlices + include('./slices/TeamMember.ejs', { slice: slice, index: index})
   }
   else {
     return '<h1>No Slices found</h1>';

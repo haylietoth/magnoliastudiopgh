@@ -8,11 +8,22 @@
   background: #FFF7C7; /* Gecko Browsers */
 }
 
+@font-face {
+  font-family: horizon;
+  src: url(../fonts/horizon.otf);
+}
+
+@font-face {
+  font-family: vultures;
+  src: url(../fonts/vultures.otf);
+}
+
 /*
  * Globals
  */
 body {
-  color: #72767b;
+  color: #2B2B2B;
+  background-color: #E4E2DD;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
@@ -24,9 +35,9 @@ a {
   line-height: 28px;
   text-decoration: none;
 }
-p a {
+/* p a {
   text-decoration: underline;
-}
+} */
 h1, h2, h3, h4, h5, h6 {
   color: #2B2B2B;
   font-family: "aileron", sans-serif;
@@ -65,4 +76,23 @@ em {
 }
 img {
   max-width: 100%;
+}
+
+.primary {
+  display: block;
+  text-decoration: none;
+  width: 150px;
+  min-width: fit-content;
+  color: #2B2B2B;
+  border-radius: 15px;
+  border-color: #2B2B2B;
+  border: 1px solid #2B2B2B;
+  font-size: 14px;
+  text-align: center;
+}
+
+.primary:hover {
+  background-color: #2B2B2B;
+  color: #E4E2DD;
+  border-color: #E4E2DD;
 }

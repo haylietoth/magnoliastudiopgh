@@ -57,7 +57,16 @@ route.get(
   '/',
   asyncHandler(async (req, res, next) => {
     const homePageContent = await client.getSingle('homepage');
-    res.render('HomePage', { homePageContent });
+    res.render('Home Page', { homePageContent });
+  })
+);
+
+// Route for our_team page
+route.get(
+  '/our-team',
+  asyncHandler(async (req, res, next) => {
+    const teamPageContent = await client.getSingle('our_team');
+    res.render('TeamPage', { teamPageContent });
   })
 );
 

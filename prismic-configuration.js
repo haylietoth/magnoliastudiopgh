@@ -23,5 +23,9 @@ export const client = prismic.createClient(repoName, {
       type: 'page',
       path: '/:uid',
     },
+    {
+      type: 'our_team',
+      path: '/our-team',
+    },
   ],
 });

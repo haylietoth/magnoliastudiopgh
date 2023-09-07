@@ -1,0 +1,30 @@
+<% 
+  var sectionClass;
+  if ( index % 2 !== 0 ) { 
+    sectionClass="reverse";
+  }
+%>
+<div class="team-container <%- sectionClass %>">
+    <section class="two-col">
+        <img 
+            class="team-img"
+            src="<%- slice.primary.headshot.url %>" 
+            alt="<%- slice.primary.headshot.alt %>"
+        />
+    </section>
+    <section class="two-col">
+        <%- ctx.prismicH.asHTML(slice.primary.name) %>
+        <%- ctx.prismicH.asHTML(slice.primary.biography) %>
+        <section class="team-links">
+            <a href="<%- ctx.prismicH.asLink(slice.primary.instagram_link) %>" target="_blank">
+                <%- include("../../public/images/ig_icon.svg") %>
+            </a>
+            <a class="primary" href="<%- ctx.prismicH.asLink(slice.primary.booking_link) %>" target="_blank">
+                BOOK
+            </a>
+        </section>
+    </section>
+</div>
+  
+
+

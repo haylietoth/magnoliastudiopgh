@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <%- include('./partials/head'); %>
+  </head>
+  <body>
+    <%- include('./partials/navigation'); %>
+    <div class="container">
+      <h1 style="text-align:center;padding:20px 0;"><%- ctx.prismicH.asText(teamPageContent.data.title) %></h1>
+      <%- include("SliceZone", {SliceZone: teamPageContent.data.page_content}); %>      
+    </div>
+    <footer>
+      <%- include('./partials/footer'); %>
+    </footer>
+  </body>
+</html>

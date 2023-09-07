@@ -1,18 +1,15 @@
-<header class="site-header">
-  <a href="./">
-    <div class="logo">Magnolia Studio</div>
-  </a>
-  <% if (menuContent != null) { %>
-    <nav>
-      <ul>
-        <% menuContent.data.menu_links.map(menuLink => { %>
-          <li>
-            <a href="<%- ctx.prismicH.asLink(menuLink.link) %>" target="<%- menuLink.target %>">
-              <%- ctx.prismicH.asText(menuLink.label) %>
-            </a>
-         </li>
-        <% }) %>
-      </ul>
-    </nav>
-  <% } %>
-</header>
+<section class="site-header" id="site-header">
+    <a href="./" class="logo">
+      <div><span style="font-family: horizon;">Magnolia </span><span style="font-family:vultures;font-weight:100;font-size: 4rem;vertical-align: middle;">studio</span></div>
+    </a>
+    <% if (menuContent != null) { %>
+      <% menuContent.data.menu_links.map(menuLink => { %>
+          <a href="<%- ctx.prismicH.asLink(menuLink.link) %>" target="<%- menuLink.target %>">
+            <%- ctx.prismicH.asText(menuLink.label) %>
+          </a>
+      <% }) %>
+    <% } %>
+    <a href="javascript:void(0);" class="icon">
+      <i class="fa fa-plus" aria-hidden="true"></i>
+    </a>
+</section>
