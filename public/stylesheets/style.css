@@ -98,7 +98,7 @@
   display: inline-block;
   color: #2B2B2B;
   text-align: center;
-  padding: 14px;
+  margin: 14px;
   text-decoration: none;
   font-size: 14px;
 }
@@ -117,6 +117,12 @@ a.logo {
 
 .site-header div#nav-bb {
   float: right;
+}
+
+.site-header div#nav-bb a:hover,
+.site-header div#nav-bb a:focus {
+  border-bottom: 1px solid #861010;
+  color:#861010;
 }
 
 .site-header .icon {
@@ -392,11 +398,11 @@ footer a {
 
 /* service page */
 
-.services {
+.row {
   position: relative;
   z-index: -1;
 }
-.services:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
@@ -563,6 +569,8 @@ footer a {
   }
 
   .site-header a {
+    margin: 0;
+    padding: 14px;
     display: block;
     float:none;
     text-align: center;
@@ -668,4 +676,8 @@ footer a {
 
 a:focus {
   outline: none !important;
+}
+
+.title-bar {
+  background: navy !important;
 }

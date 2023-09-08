@@ -6,7 +6,11 @@
     <%- include('./partials/navigation'); %>
     <div class="container">
       <h1 style="text-align:center;padding:20px 0;"><%- ctx.prismicH.asText(pageContent.data.title) %></h1>
-      <%- pageContent.data.image %>
+      <section class="row">
+        <%- pageContent.data.images.map((slice) => {
+          return include('./slices/Image.ejs', { slice: slice });
+        }); %>
+      </section>
     </div>
     <footer>
       <%- include('./partials/footer'); %>

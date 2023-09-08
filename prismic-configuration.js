@@ -16,12 +16,12 @@ export const client = prismic.createClient(repoName, {
   // the paths to match the routing in your project.
   routes: [
     {
-      type: 'homepage',
+      type: 'home',
       path: '/',
     },
     {
       type: 'our_team',
-      path: '/our-team',
+      path: '/team',
     },
     {
       type: 'services',

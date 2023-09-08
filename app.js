@@ -56,14 +56,14 @@ route.get(
 route.get(
   '/',
   asyncHandler(async (req, res, next) => {
-    const homePageContent = await client.getSingle('homepage');
-    res.render('HomePage', { homePageContent });
+    const pageContent = await client.getSingle('home');
+    res.render('Home', { pageContent });
   })
 );
 
 // Route for our_team page
 route.get(
-  '/our-team',
+  '/team',
   asyncHandler(async (req, res, next) => {
     const pageContent = await client.getSingle('our_team');
     res.render('page', { pageContent });
@@ -75,7 +75,7 @@ route.get(
   '/services',
   asyncHandler(async (req, res, next) => {
     const pageContent = await client.getSingle('services');
-    res.render('Service', { pageContent });
+    res.render('Services', { pageContent });
   })
 );
 

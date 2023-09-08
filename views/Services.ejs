@@ -5,12 +5,13 @@
   <body>
     <%- include('./partials/navigation'); %>
     <div class="container">
-      <h1 style="text-align:center;padding:20px 0;">WORK IN PROGRESS</h1>
+      <h1 style="text-align:center;padding:20px 0;"><%- ctx.prismicH.asText(pageContent.data.title) %></h1>
+      <div class="row">
+        <%- include("SliceZone", {SliceZone: pageContent.data.page_content}); %>      
+      </div>
     </div>
     <footer>
       <%- include('./partials/footer'); %>
     </footer>
   </body>
 </html>
-
-
