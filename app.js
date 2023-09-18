@@ -1,10 +1,4 @@
-/*jslint node: true */
-/*jshint esnext: true */
 'use strict';
-
-/**
- * Module dependencies.
- */
 import app from './config.js';
 import { client, repoName } from './prismic-configuration.js';
 import * as prismicH from '@prismicio/helpers';

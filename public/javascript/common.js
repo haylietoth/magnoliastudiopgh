@@ -24,7 +24,13 @@ $(document).ready(function(){
             $('#nav-bb').slideToggle();
         }
         $(this).find('i').toggleClass('exit-menu');
-
-        
     });
+
+    $(function() {
+        $(".window").draggable();
+    });
+
+    $("#revert").click(function() {
+        console.log($(this).parent().parent().parent());
+    })
 });
