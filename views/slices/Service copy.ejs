@@ -1,22 +1,20 @@
-<div class="service">
+<section class="service">
     <div class="title">
         <%- ctx.prismicH.asHTML(slice.primary.title) %>
     </div>
-    <div class="info">
-        <div class="desc">
-            <%- ctx.prismicH.asHTML(slice.primary.description) %>
-        </div>
-        <div class="link">
+    <div class="desc">
+        <%- ctx.prismicH.asHTML(slice.primary.description) %>
+        <p>
             <a class="primary" href="<%- ctx.prismicH.asLink(slice.primary.booking_link) %>" target="_blank">
                 BOOK
             </a>
-        </div>
+        </p>
         <div class="details">
             <%- ctx.prismicH.asHTML(slice.primary.price) %>
             <%- ctx.prismicH.asHTML(slice.primary.length) %>
         </div>
     </div>
-</div>
+</section>
   
 
 

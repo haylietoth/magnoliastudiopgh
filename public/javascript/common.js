@@ -27,10 +27,18 @@ $(document).ready(function(){
     });
 
     $(function() {
-        $(".window").draggable();
+        $(".window").draggable({ containment: "parent" });
     });
 
     $("#revert").click(function() {
         console.log($(this).parent().parent().parent());
+    })
+
+    $("#min").click(function(e){
+        $(this).parent().parent().siblings()[0].slideUp();
+    })
+
+    $("#max").click(function(e){
+        $(this).parent().parent().siblings()[0].slideToggle();
     })
 });

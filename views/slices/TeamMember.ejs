@@ -1,16 +1,22 @@
 <% 
   var sectionClass;
+  var tilt;
   if ( index % 2 !== 0 ) { 
     sectionClass="reverse";
+    tilt = "tilt-minus";
+  } else {
+    tilt = "tilt-plus";
   }
 %>
 <div class="team-container <%- sectionClass %>">
     <section class="two-col">
-        <img 
-            class="team-img"
-            src="<%- slice.primary.headshot.url %>" 
-            alt="<%- slice.primary.headshot.alt %>"
-        />
+        <div class="tape <%- tilt %>"></div>
+        <div class="paper">
+            <img
+                src="<%- slice.primary.headshot.url %>" 
+                alt="<%- slice.primary.headshot.alt %>"
+            />
+        </div>
     </section>
     <section class="two-col">
         <%- ctx.prismicH.asHTML(slice.primary.name) %>
