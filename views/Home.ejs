@@ -3,9 +3,14 @@
     <%- include('./partials/head'); %>
   </head>
   <body>
-    <%- include('./partials/cloud_nav'); %>
-    <div class="container">
-      <h1 style="text-align:center;padding:20px 0;"><%- ctx.prismicH.asText(pageContent.data.title) %></h1>
+    <%- include('./partials/home_nav'); %>
+    <div class="home-container">
+      <div class="logo-section">
+        <img
+            src="<%- pageContent.data.logo.url %>" 
+            alt="<%- pageContent.data.logo.alt %>"
+        />
+      </div>
       <section>To Do!</section>
     </div>
     <footer>

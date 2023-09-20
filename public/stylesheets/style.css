@@ -5,6 +5,12 @@
   margin: 10% auto;
 }
 
+.home-container {
+  max-width: 1024px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .contact-container {
   max-width: 1024px;
   margin: 0 auto;
@@ -86,7 +92,7 @@ a.logo {
 /* end site-header */
 
 /* cloud-header */
-.cloud-header {
+.alt-header {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -95,7 +101,7 @@ a.logo {
   transform: translate(-50%, 0);
   background-color: none !important;
 }
-.cloud-header a {
+.alt-header a {
   display: block;
   color: var(--neutral-dk);
   text-align: center;
@@ -103,24 +109,24 @@ a.logo {
   text-decoration: none;
   font-size: 14px;
 }
-.cloud-header div#nav-bb a:hover {
+.alt-header div#nav-bb a:hover {
   background-color: var(--magnolia-red);
   color:#F6F6F4;
 }
-.cloud-header div#nav-bb {
+.alt-header div#nav-bb {
   position: absolute;
   display: none;
   width: 100%;
   background-color: #F6F6F4;
 }
-.cloud-header a.cloud-icon {
+.alt-header a.cloud-icon {
   display: block;
   padding: 20px;
   position: absolute;
   right: 0;
   top: 0;
 }
-.cloud-header .cloud-icon:before {
+.alt-header .cloud-icon:before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -260,7 +266,7 @@ footer a {
   padding: 0 10px;
 }
 
-svg:hover path, svg:hover circle {
+.team-links svg:hover path, .team-links svg:hover circle {
   fill: var(--magnolia-red) !important;
 }
 
@@ -369,7 +375,7 @@ svg:hover path, svg:hover circle {
   width: 70%;
   position: relative;
   left: 153px;
-  top: 1px;
+  top: 55px;
 }
 
 #cancelPolicy p {
@@ -383,7 +389,7 @@ svg:hover path, svg:hover circle {
   width: 30%;
   position: relative;
   left: 74px;
-  top: 51px;
+  top: 150px;
 }
 
 .hour-table {
@@ -407,7 +413,7 @@ svg:hover path, svg:hover circle {
 #contact {
   width: 50%;
   position: relative;
-  left: 402px;
+  left: 420px;
   top: -132px;
 }
 
@@ -498,17 +504,15 @@ svg:hover path, svg:hover circle {
     float: none;
     justify-content: space-evenly;
   }
-}
 
-@media (max-width: 600px) {
- #cancelPolicy, #hours, #contact {
-  width: 80%;
-  position: relative;
-  left: auto;
-  top: auto;
-  transform: none;
-  margin: 1rem auto;
- }
+  #cancelPolicy, #hours, #contact {
+    width: 80%;
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    margin: 1rem auto;
+   }
 }
 
 /* tape effect */

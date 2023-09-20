@@ -15,12 +15,12 @@ $(document).ready(function(){
 
     $(".cloud-icon").click(function(e){
         e.preventDefault();
-        var x = document.getElementById("cloud-header");
-        if (x.className === "cloud-header") {
+        var x = document.getElementById("alt-header");
+        if (x.className === "alt-header") {
             x.className += " responsive";
             $('#nav-bb').slideToggle();
         } else {
-            x.className = "cloud-header";
+            x.className = "alt-header";
             $('#nav-bb').slideToggle();
         }
         $(this).find('i').toggleClass('exit-menu');
