@@ -13,17 +13,17 @@
 
 @font-face {
   font-family: horizon;
-  src: url(../fonts/horizon.otf);
+  src: url(./fonts/horizon.otf);
 }
 
 @font-face {
   font-family: horizon_outlined;
-  src: url(../fonts/horizon_outlined.otf);
+  src: url(./fonts/horizon_outlined.otf);
 }
 
 @font-face {
   font-family: vultures;
-  src: url(../fonts/vultures.otf);
+  src: url(./fonts/vultures.otf);
 }
 
 /* Globals */
