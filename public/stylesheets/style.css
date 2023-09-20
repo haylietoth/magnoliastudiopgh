@@ -21,7 +21,6 @@
   max-width: 1024px;
   left: 50%;
   transform: translate(-50%, 0);
-  height: 80px;
   /* background-size: 100% 200%;
   background-image: linear-gradient(to bottom, var(--neutral-lt) 50%, #F6F6F4 50%);
   background-position: 0 0;
@@ -100,7 +99,7 @@ a.logo {
   display: block;
   color: var(--neutral-dk);
   text-align: center;
-  padding: 14px;
+  padding: 25px;
   text-decoration: none;
   font-size: 14px;
 }
@@ -261,7 +260,7 @@ footer a {
   padding: 0 10px;
 }
 
-.team-links svg:hover path, .team-links svg:hover circle {
+svg:hover path, svg:hover circle {
   fill: var(--magnolia-red) !important;
 }
 
@@ -351,8 +350,10 @@ footer a {
 .about {
   max-width: 1024px;
   position: absolute;
-  height: 100vh;
   top: 100;
+  left: 0; 
+  right: 0; 
+  margin: 0 auto; 
   z-index: 99;
 }
 
@@ -366,9 +367,9 @@ footer a {
 
 #cancelPolicy {
   width: 70%;
-  /* position: relative;
+  position: relative;
   left: 153px;
-  top: 1px; */
+  top: 1px;
 }
 
 #cancelPolicy p {
@@ -380,9 +381,9 @@ footer a {
 
 #hours {
   width: 30%;
-  /* position: relative;
+  position: relative;
   left: 74px;
-  top: 51px; */
+  top: 51px;
 }
 
 .hour-table {
@@ -405,9 +406,9 @@ footer a {
 
 #contact {
   width: 50%;
-  /* position: relative;
+  position: relative;
   left: 402px;
-  top: -132px; */
+  top: -132px;
 }
 
 .contact-fieldset * {
@@ -434,7 +435,8 @@ footer a {
     margin: 30% auto;
   }
 
-  .site-header.responsive {
+  .site-header.responsive,
+  .cloud-header.responsive {
     background-color: #F6F6F4;
   }
 
@@ -464,7 +466,7 @@ footer a {
 
   .site-header a {
     margin: 0;
-    padding: 14px;
+    padding: 25px;
     display: block;
     float:none;
     text-align: center;
