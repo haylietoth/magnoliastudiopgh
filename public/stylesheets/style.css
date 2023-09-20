@@ -283,8 +283,7 @@ footer a {
 .service {
   -ms-flex: 30%;
   flex: 30%;
-  max-width: 30%;    
-  min-height: 130px;
+  max-width: 30%;   
   margin: 1rem;
   display: flex;
   border: 1px solid var(--neutral-dk);
@@ -308,6 +307,7 @@ footer a {
   position: relative;
   display: block;
   width: 100%;
+  min-height: 200px;
 }
 
 .service div.info > p {
