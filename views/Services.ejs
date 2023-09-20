@@ -5,9 +5,8 @@
   <body>
     <%- include('./partials/navigation'); %>
     <div class="container">
-      <h1 style="text-align:center;padding:20px 0;"><%- ctx.prismicH.asText(pageContent.data.title) %></h1>
+      <h1><%- ctx.prismicH.asText(pageContent.data.title) %></h1>
       <div class="services">
-        <%- include("SliceZone", {SliceZone: pageContent.data.page_content}); %>      
       </div>
     </div>
     <footer>
