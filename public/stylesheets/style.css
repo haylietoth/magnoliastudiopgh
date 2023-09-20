@@ -366,9 +366,9 @@ footer a {
 
 #cancelPolicy {
   width: 70%;
-  position: relative;
+  /* position: relative;
   left: 153px;
-  top: 1px;
+  top: 1px; */
 }
 
 #cancelPolicy p {
@@ -380,9 +380,9 @@ footer a {
 
 #hours {
   width: 30%;
-  position: relative;
+  /* position: relative;
   left: 74px;
-  top: 51px;
+  top: 51px; */
 }
 
 .hour-table {
@@ -405,9 +405,9 @@ footer a {
 
 #contact {
   width: 50%;
-  position: relative;
+  /* position: relative;
   left: 402px;
-  top: -132px;
+  top: -132px; */
 }
 
 .contact-fieldset * {

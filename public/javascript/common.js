@@ -35,10 +35,12 @@ $(document).ready(function(){
     })
 
     $("#min").click(function(e){
-        $(this).parent().parent().siblings()[0].slideUp();
+        var id = $(this).parent().parent().parent().attr('id');
+        $('#' + id + ' div.window-body').slideUp();
     })
 
     $("#max").click(function(e){
-        $(this).parent().parent().siblings()[0].slideToggle();
+        var id = $(this).parent().parent().parent().attr('id');
+        $('#' + id + ' div.window-body').slideDown();
     })
 });
