@@ -46,6 +46,15 @@ route.get(
   })
 );
 
+route.get(
+  '*',
+  asyncHandler(async (req, res, next) => {
+    const footerContent = await client.getSingle('footer');
+    res.locals.footerContent = footerContent;
+    next();
+  })
+);
+
 // Route for homepage
 route.get(
   '/',

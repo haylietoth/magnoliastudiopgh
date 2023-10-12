@@ -13,7 +13,7 @@ $(document).ready(function(){
         $(this).find('i').toggleClass('exit-menu');
     });
 
-    $(".cloud-icon").click(function(e){
+    $(".alt-icon").click(function(e){
         e.preventDefault();
         var x = document.getElementById("alt-header");
         if (x.className === "alt-header") {
@@ -43,4 +43,12 @@ $(document).ready(function(){
         var id = $(this).parent().parent().parent().attr('id');
         $('#' + id + ' div.window-body').slideDown();
     })
+
+    $('.your-class').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+    });
 });
+

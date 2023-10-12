@@ -1,9 +1,28 @@
-<p>
-  <a href="https://www.instagram.com/magnoliastudiopgh" target="_blank">
-    <%- include("../../public/images/ig_icon.svg") %>
-  </a>
-  <a href="https://m.facebook.com/magnoliastudiopgh" target="_blank">
-    <%- include("../../public/images/fb_icon.svg") %>
-  </a>
-</p>
+
+<div class="logo">
+</div>
+<div class="container-f">
+  <div class="box" style="text-align: left;">
+    <p class="header" role="header">Contact</p>
+    <%- ctx.prismicH.asHTML(footerContent.data.contact_info) %>
+    <p class="header" role="header">Address</p>
+    <%- ctx.prismicH.asHTML(footerContent.data.address_info) %>
+  </div>
+  <div class="box" style="text-align: center;">
+    <p class="header" role="header">Follow Us</p>
+    <p>
+      <a href="<%- ctx.prismicH.asLink(footerContent.data.insta_link) %>" target="_blank">
+        <%- include("../../public/images/ig_icon.svg") %>
+      </a>
+      <a href="<%- ctx.prismicH.asLink(footerContent.data.fb_link) %>" target="_blank">
+        <%- include("../../public/images/fb_icon.svg") %>
+      </a>
+    </p> 
+  </div>
+  <div class="box" style="text-align: right;">
+    <p class="header" role="header">Hours</p>
+    <%- ctx.prismicH.asHTML(footerContent.data.hours_info) %>
+  </div>
+</div>
+
 

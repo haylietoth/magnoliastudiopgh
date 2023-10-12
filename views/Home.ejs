@@ -1,17 +1,11 @@
 <html>
   <head>
-    <%- include('./partials/head'); %>
+    <%- include('./partials/head-home'); %>
   </head>
   <body>
     <%- include('./partials/home_nav'); %>
     <div class="home-container">
-      <div class="logo-section">
-        <img
-            src="<%- pageContent.data.logo.url %>" 
-            alt="<%- pageContent.data.logo.alt %>"
-        />
-      </div>
-      <section>To Do!</section>
+        <%- include("SliceZone", {SliceZone: pageContent.data.page_content}); %>
     </div>
     <footer>
       <%- include('./partials/footer'); %>

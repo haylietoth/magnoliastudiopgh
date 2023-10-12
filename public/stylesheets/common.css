@@ -1,6 +1,7 @@
 :root {
   --magnolia-red: #861010;
   --epicruen-blue: #01B5CB;
+  --main-bkgr: #F6F6F4;
   --neutral-lt: #E4E2DD;
   --neutral: #C9C5BB;
   --neutral-dk: #2B2B2b;
@@ -29,7 +30,7 @@
 /* Globals */
 body {
   color: var(--neutral-dk);
-  background-color: var(--neutral-lt);
+  background-color: var(--main-bkgr);
 }
 
 a {

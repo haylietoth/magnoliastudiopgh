@@ -1,4 +1,5 @@
-<%- SliceZone.reduce((prevSlices, slice, index) => {
+<%- 
+SliceZone.reduce((prevSlices, slice, index) => {
   if (slice.slice_type === 'text_section') {
      return prevSlices + include('./slices/TextSection.ejs', { slice: slice })
    }  
@@ -19,6 +20,9 @@
   }
   else if (slice.slice_type === 'service') {
     return prevSlices + include('./slices/Test.ejs', { slice: slice, index: index})
+  }
+  else if (slice.slice_type === 'slider') {
+    return prevSlices + include('./slices/Slider.ejs', { slice: slice, index: index})
   }
   else {
     return '<h1>No Slices found</h1>';
