@@ -1,0 +1,20 @@
+<div class="highlights-container">
+  <%- ctx.prismicH.asHTML(slice.primary.title) %>
+  <div class="highlights-layout">
+    <% slice.items.map(items => { %>
+      <div class="highlights-col">
+        <div class="highlights-img">
+          <img 
+            src="<%- items.image.url %>" 
+            alt="<%- items.image.alt %>" 
+          />
+        </div>
+        <div class="highlights-link">
+          <a class="primary" href="<%- ctx.prismicH.asLink(items.booking_link) %>" target="_blank">
+              BOOK NOW
+          </a>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>

@@ -3,8 +3,13 @@
     <%- include('./partials/head-home'); %>
   </head>
   <body>
-    <%- include('./partials/home_nav'); %>
+    <%- include('./partials/navigation'); %>
     <div class="home-container">
+      <div class="header-img" style='background-image: url("<%- pageContent.data.header_image.url %>")'>
+      </div>
+      <div class="banner">
+        Lashes - Brows - Skin
+      </div>
         <%- include("SliceZone", {SliceZone: pageContent.data.page_content}); %>
     </div>
     <footer>

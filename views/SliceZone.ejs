@@ -24,6 +24,15 @@ SliceZone.reduce((prevSlices, slice, index) => {
   else if (slice.slice_type === 'slider') {
     return prevSlices + include('./slices/Slider.ejs', { slice: slice, index: index})
   }
+  else if (slice.slice_type === 'awards') {
+    return prevSlices + include('./slices/Awards.ejs', { slice: slice, index: index})
+  }
+  else if (slice.slice_type === 'two_col') {
+    return prevSlices + include('./slices/TwoColumn.ejs', { slice: slice, index: index})
+  }
+  else if (slice.slice_type === 'highlights') {
+    return prevSlices + include('./slices/Highlights.ejs', { slice: slice, index: index})
+  }
   else {
     return '<h1>No Slices found</h1>';
   } 

@@ -1,0 +1,31 @@
+<% 
+  if ( slice.primary.order == 'Image First' ) { 
+    %>
+    <div class="layout">
+      <div class="wwd-img">
+        <img 
+          src="<%- slice.primary.image.url %>" 
+          alt="<%- slice.primary.image.alt %>" 
+        />
+      </div>
+      <div class="wwd-desc">
+        <%- ctx.prismicH.asHTML(slice.primary.description) %>
+      </div>
+    </div>
+    <%
+  } else {
+    %>
+    <div class="layout">
+      <div class="wwd-desc">
+        <%- ctx.prismicH.asHTML(slice.primary.description) %>
+      </div>
+      <div class="wwd-img">
+        <img 
+          src="<%- slice.primary.image.url %>" 
+          alt="<%- slice.primary.image.alt %>" 
+        />
+      </div>
+    </div>
+    <%
+  }
+%>

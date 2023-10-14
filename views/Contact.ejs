@@ -1,113 +1,15 @@
 <html>
   <head>
     <%- include('./partials/head'); %>
-    <link rel="stylesheet" href="/stylesheets/cloud-bg.css" /> 
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/98.css"
-      >
   </head>
   <body>
-    <%- include('./partials/cloud_nav'); %>
-    <div class="background">
-      <%- include("./partials/clouds.ejs")%>
+    <%- include('./partials/navigation'); %>
+    <div class="container">
+       
     </div>
-    <div class="about">
-      <div class="windows">
-        <div class="window" id="cancelPolicy">
-          <div class="title-bar">
-            <div class="title-bar-text">Cancellation Policy</div>
-            <div class="title-bar-controls">
-              <button aria-label="Minimize" id="min"></button>
-              <button aria-label="Maximize" id="max"></button>
-              <button aria-label="Close" id="revert">></button>
-            </div>
-          </div>
-          <div class="window-body">
-            <p>Please allow 24 hour notice when cancelling appointments. If the appointment is canceled after the 24 hour period, 50% of the booked service will be charged as a cancellation fee. All no-show appointments will be subjected to 100% charge of the booked service as a no-show fee.</p>
-          </div>
-        </div>
-        <div class="window" id="hours">
-          <div class="title-bar">
-            <div class="title-bar-text">Business Hours</div>
-            <div class="title-bar-controls">
-              <button aria-label="Minimize" id="min"></button>
-              <button aria-label="Maximize" id="max"></button>
-              <button aria-label="Close" id="revert"></button>
-            </div>
-          </div>
-          <div class="window-body">
-            <table class="interactive hour-table">
-              <thead>
-                <tr>
-                  <th>Day</th>
-                  <th>Hours</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Monday</td>
-                  <td>10 AM - 6 PM</td>
-                </tr>
-                <tr>
-                  <td>Tuesday</td>
-                  <td>9 AM - 5 PM</td>
-                </tr>
-                <tr>
-                  <td>Wednesday</td>
-                  <td>12 AM - 8 PM</td>
-                </tr>
-                <tr>
-                  <td>Thursday</td>
-                  <td>11 AM - 7 PM</td>
-                </tr>
-                <tr>
-                  <td>Friday</td>
-                  <td>9 AM - 5 PM</td>
-                </tr>
-                <tr>
-                  <td>Saturday</td>
-                  <td>9 AM - 5 PM</td>
-                </tr>
-                <tr>
-                  <td>Sunday</td>
-                  <td>CLOSED</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="window" id="contact">
-          <div class="title-bar">
-            <div class="title-bar-text">Contact</div>
-            <div class="title-bar-controls">
-              <button aria-label="Minimize" id="min"></button>
-              <button aria-label="Maximize" id="max"></button>
-              <button aria-label="Close" id="revert"></button>
-            </div>
-          </div>
-          <div class="window-body">
-            <fieldset class="contact-fieldset">
-              <div class="field-row-stacked">
-                <label for="name">Name</label>
-                <input id="name" type="text" />
-              </div>
-              <div class="field-row-stacked">
-                <label for="email">Email</label>
-                <input id="email" type="text" />
-              </div>
-              <div class="field-row-stacked">
-                <label for="message">Message</label>
-                <textarea id="message" rows="8"></textarea>
-              </div>
-              <div class="field-row-stacked">
-                <input type="submit" />
-              </div>
-            </fieldset>
-          </div>
-        </div>
-      </div>
-    </div> 
+    <footer>
+      <%- include('./partials/footer'); %>
+    </footer>
   </body>
 </html>
 
